@@ -1,0 +1,24 @@
+[
+  {
+    "eventName": "Mambo Outlet Monthly Social",
+    "location": "By Your Side Dance Studio",
+    "locationLink": "https://maps.app.goo.gl/9V2FfEp4RahmjfPL6",
+    "instagramLink": "https://www.instagram.com/mamboinc/",
+    "classStartTime": "8:00PM",
+    "socialStartTime": "10:00PM",
+    "day": "SAT",
+    "weekNum": "3",
+    "cost": "$15"
+  },
+  {
+    "eventName": "Blen Blen",
+    "location": "Soho Dance LA",
+    "locationLink": "https://maps.app.goo.gl/UazT244VR9BfDpVC8",
+    "instagramLink": "https://www.instagram.com/blenblenla/",
+    "classStartTime": "8:00PM",
+    "socialStartTime": "10:00PM",
+    "day": "SAT",
+    "weekNum": "2",
+    "cost": "$18/25" 
+  }
+]
