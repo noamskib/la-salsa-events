@@ -21,13 +21,13 @@ function App() {
     const fetchEvents = async () => {
       try {
         const oneOffEventsResponse = await axios.get(
-          "/la-salsa-events/one-off-events.json"
+          "la-salsa-events/one-off-events.json"
         );
         const weeklyEventsResponse = await axios.get(
-          "/la-salsa-events/recurring-weekly-events.json"
+          "la-salsa-events/recurring-weekly-events.json"
         );
         const monthlyEventsResponse = await axios.get(
-          "/la-salsa-events/recurring-monthly-events.json"
+          "la-salsa-events/recurring-monthly-events.json"
         );
 
         // Process one-off events
