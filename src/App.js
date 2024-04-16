@@ -20,12 +20,14 @@ function App() {
   useEffect(() => {
     const fetchEvents = async () => {
       try {
-        const oneOffEventsResponse = await axios.get("https://noamskib.github.io/la-salsa-events/one-off-events.json");
+        const oneOffEventsResponse = await axios.get(
+          "/la-salsa-events/one-off-events.json"
+        );
         const weeklyEventsResponse = await axios.get(
-          "https://noamskib.github.io/la-salsa-events/recurring-weekly-events.json"
+          "/la-salsa-events/recurring-weekly-events.json"
         );
         const monthlyEventsResponse = await axios.get(
-          "https://noamskib.github.io/la-salsa-events/recurring-monthly-events.json"
+          "/la-salsa-events/recurring-monthly-events.json"
         );
 
         // Process one-off events
@@ -152,9 +154,9 @@ function Day({ date, events }) {
     <div className="day">
       <p className="date-title">{formattedDate}</p>
       {events.map((event) => (
-      <div className="monthly-item">
-        <Event key={event.id} event={event} />
-      </div>
+        <div className="monthly-item">
+          <Event key={event.id} event={event} />
+        </div>
       ))}
     </div>
   );
