@@ -20,12 +20,12 @@ function App() {
   useEffect(() => {
     const fetchEvents = async () => {
       try {
-        const oneOffEventsResponse = await axios.get("/one-off-events.json");
+        const oneOffEventsResponse = await axios.get("https://noamskib.github.io/la-salsa-events/one-off-events.json");
         const weeklyEventsResponse = await axios.get(
-          "/recurring-weekly-events.json"
+          "https://noamskib.github.io/la-salsa-events/recurring-weekly-events.json"
         );
         const monthlyEventsResponse = await axios.get(
-          "/recurring-monthly-events.json"
+          "https://noamskib.github.io/la-salsa-events/recurring-monthly-events.json"
         );
 
         // Process one-off events
